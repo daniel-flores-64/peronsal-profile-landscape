@@ -4,3 +4,31 @@
     --norText: #a5a4a4;
     --highText: #b8b6b6;
 }
+body{
+    background-color: var(--primaryColor);
+}
+.i-container{
+    padding: 5px;
+    box-shadow: 2px;
+}
+i{
+    color: var(--norText);
+    font-size: 20px;
+}
+.divider{
+    color: var(--secondaryColor);
+    width: 3px;
+    height: 20px;
+    padding: 5px;
+}
+.selfIntro{
+    background-color: var(--primaryColor);
+    width: auto;
+    box-shadow: 2px;
+}
+.infoTitle, h3{
+    color: var(--norText);
+}
+.infoCont, h1{
+    color: var(--highText);
+}
