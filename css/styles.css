@@ -13,18 +13,25 @@ body{
 }
 i{
     color: var(--norText);
-    font-size: 20px;
 }
 .divider{
-    color: var(--secondaryColor);
+    background-color: #000;
     width: 3px;
-    height: 20px;
-    padding: 5px;
+    height: auto;
+    margin: 5px;
+}
+.introPict{
+    position: fixed;
+    top: -40px;
+}
+.intropic img{
+    width: 60px;
+    height: 40px;
 }
 .selfIntro{
     background-color: var(--primaryColor);
     width: auto;
-    box-shadow: 2px;
+    box-shadow: 8px 5px ;
 }
 .infoTitle, h3{
     color: var(--norText);
