@@ -8,7 +8,7 @@
 body{
     background-color: var(--primaryColor);
 }
-i{
+i, .infoTitle{
     color: var(--norText);
 }
 button{
@@ -18,7 +18,10 @@ button{
     background-color: var(--primaryColor);
     padding: 20px;
 }
-.selfIntro h1{
+#aboutSect, #resumeSect, #workSect, #blogSect, #contactSect{
+    background-color: var(--secondaryColor);
+}
+.selfIntro h1, .infoCont, .detail-cont h3, .detail-cont h1{
     color: var(--highText);
 }
 p, li, .selfIntro h3{
@@ -53,15 +56,16 @@ p, li, .selfIntro h3{
     display: flex;
     flex-wrap: wrap;
 }
-nav{
+.navbar{
     background-color: var(--secondaryColor);
+    height: 520px;
 }
 .navbar-brand{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    height: 80px;
+    height: 100px;
     padding: 2px 5px;
     border-radius: 5px;
     text-align: center;
@@ -79,8 +83,10 @@ nav{
 .infoTitle{
     color: var(--norText);
 }
-.infoCont{
-    color: var(--highText);
+.detail-cont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
 }
 .detail-cont img{
     width: 100%;
@@ -89,6 +95,8 @@ nav{
 .detail-cont h5{
     color: var(--contrastColor);
 }
-.detail-cont h1{    
-    color: var(--highText);
+.card{
+    color: var(--norText);
+    background-color: var(--primaryColor);
+    border: 1px solid --secondaryColor;
 }
