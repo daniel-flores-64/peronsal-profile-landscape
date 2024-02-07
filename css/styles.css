@@ -22,9 +22,9 @@ button{
 #aboutSect, #resumeSect, #workSect, #blogSect, #contactSect{
     background-color: var(--secondaryColor);
 }
-#resumeSect, #workSect, #blogSect, #contactSect{
+/*#resumeSect, #workSect, #blogSect, #contactSect{
     display: none !important;
-}
+}*/
 .selfIntro h1, .infoCont, .detail-cont h3, .detail-cont h1{
     color: var(--highText);
 }
@@ -48,12 +48,14 @@ p, li, .selfIntro h3{
     margin: 5px;
 }
 .introPict{
-    position: fixed;
-    top: -40px;
+    border-radius: 8px;
+    position: relative;
+    bottom: 100px;
+    padding: .8rem;
 }
-.intropic img{
-    width: 60px;
-    height: 40px;
+.introPict img{
+    width: 100%;
+    height: auto;
 }
 .selfIntro{
     background-color: var(--secondaryColor);
