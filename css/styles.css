@@ -133,6 +133,9 @@ input, textarea{
 .card:hover{
     background-color: var(--secondaryHovColor);
 }
+#aboutSect .card img{
+    padding: 2rem;
+}
 .divider-horiz{
     width: 100%;
     height: 2px;
