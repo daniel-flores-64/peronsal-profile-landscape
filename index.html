@@ -31,8 +31,10 @@
                 </div>
             </div>
         </div>
-        <div class="divider col-2"></div>
-        <div class="d-flex flex-wrap col-5">
+        <div class="col-2 d-flex justify-content-center">
+            <div class="divider"></div>
+        </div>
+        <div class="col-5 d-flex flex-wrap">
             <div class="col-6">
                 <div class="infoBlock mb-2">
                     <p class="infoTitle">EMAIL</p>
@@ -56,373 +58,383 @@
         </div>
     </div>
     <div class="container body-cont mt-5">
-        <navbar class="navbar sticky-top d-flex flex-wrap col-2">
+        <div class="col-2">
+            <navbar class="navbar sticky-top d-flex flex-wrap">
             <div class="container">
-                    <a onclick="menuActive(0)" class="navbar-brand active" href="#">About</a>
-                    <a onclick="menuActive(1)" class="navbar-brand" href="#">Resume</a>
-                    <a onclick="menuActive(2)" class="navbar-brand" href="#">Work</a>
-                    <a onclick="menuActive(3)" class="navbar-brand" href="#">Blog</a>
-                    <a onclick="menuActive(4)" class="navbar-brand" href="#">Contact</a>
+                    <a onclick="menuActive(0, aboutSect)" class="navbar-brand active" href="#aboutSect">About</a>
+                    <a onclick="menuActive(1, resumeSect)" class="navbar-brand" href="#resumeSect">Resume</a>
+                    <a onclick="menuActive(2, workSect)" class="navbar-brand" href="#workSect">Work</a>
+                    <a onclick="menuActive(3, blogSect)" class="navbar-brand" href="#blogSect">Blog</a>
+                    <a onclick="menuActive(4, contactSect)" class="navbar-brand" href="#contactSect">Contact</a>
             </div>
-        </navbar>
-        <div class="detail-cont col-9 mx-3">
-            <section id="aboutSect" class="container d-flex flex-wrap">
-                <div class="col-4">
-                    <img src="" alt="Big_Photo">
-                </div>
-                <div class="col-8">
-                    <h5 class="">VISIT MY PORTFOLIO AND HIRE ME</h5>
-                    <h1>About Me</h1>
-                    <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum in 
-                    eos saepe ipsa cupiditate accusantium voluptatibus quidem nam, 
-                    reprehenderit, et necessitatibus adipisci.
-                    </p>
-                    <ul>
-                    <li><i class="bi bi-check2"></i>Web Design Full Stack</li>
-                    <li><i class="bi bi-check2"></i>24/7 Support</li>
-                    <li><i class="bi bi-check2"></i>Unlimited Revisions</li>
-                    </ul>
-                    <button>DOWNLOAD MY CV</button>
-                </div>
-                <div class="col-12 d-flex flex-wrap justify-content-center">
-                    <p class="col-12 infoTitle">WHAT I AM DOING</p>
-                    <div class="col-6">
-                        <div class="card mx-3 p-3">
-                            <i></i>
-                        <h3>Web Design Full Stack</h3>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing 
-                            elit. Inventore dolorum atque dicta distinctio 
-                            mollitia fuga.
-                        </p>
-                        </div>
-                    </div>
-                    <div class="col-6 mb-5">
-                        <div class="card mx-3 p-3">
-                            <i></i>
-                        <h3>Web Design Full Stack</h3>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing 
-                            elit. Inventore dolorum atque dicta distinctio 
-                            mollitia fuga.
-                        </p>
-                        </div>
-                    </div>
-                    <p class="infoTitle">Our Trusted Clients</p>
-                    <div class="col-12 d-flex flex-wrap justify-content-center">
+            </navbar>
+        </div>
+        <div class="col-10">
+            <div class="detail-cont mx-3">
+                <section id="aboutSect" class="container d-flex flex-wrap justify-content-center">
                     <div class="col-4">
-                        <div class="card mx-1 p-3">
-                            <i></i>
+                        <img src="" alt="Big_Photo">
+                    </div>
+                    <div class="col-8">
+                        <h5 class="">VISIT MY PORTFOLIO AND HIRE ME</h5>
+                        <h1>About Me</h1>
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum in 
+                        eos saepe ipsa cupiditate accusantium voluptatibus quidem nam, 
+                        reprehenderit, et necessitatibus adipisci.
+                        </p>
+                        <ul>
+                        <li><i class="bi bi-check2"></i>Web Design Full Stack</li>
+                        <li><i class="bi bi-check2"></i>24/7 Support</li>
+                        <li><i class="bi bi-check2"></i>Unlimited Revisions</li>
+                        </ul>
+                        <button>DOWNLOAD MY CV</button>
+                    </div>
+                    <div class="col-12 d-flex flex-wrap mt-3">
+                        <p class="infoTitle">WHAT I AM DOING</p>
+                        <div class="col-6">
+                            <div class="card mx-3 p-3">
+                                <i></i>
+                            <h3>Web Design Full Stack</h3>
                             <p>
-                                Google
+                                Lorem ipsum, dolor sit amet consectetur adipisicing 
+                                elit. Inventore dolorum atque dicta distinctio 
+                                mollitia fuga.
+                            </p>
+                            </div>
+                        </div>
+                        <div class="col-6 mb-5">
+                            <div class="card mx-3 p-3">
+                                <i></i>
+                                <h3>Web Design Full Stack</h3>
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing 
+                                    elit. Inventore dolorum atque dicta distinctio 
+                                    mollitia fuga.
+                                </p>
+                            </div>
+                        </div>
+                        <p class="infoTitle">Our Trusted Clients</p>
+                        <div class="col-12 d-flex flex-wrap mb-5">
+                        <div class="col-4 py-1">
+                            <div class="card mx-1 p-3">
+                                <img src="https://rainbowit.net/themes/inbio/wp-content/uploads/2021/08/client1-1.png" alt="marca">
+                                <div class="divider-horiz"></div>
+                                <p class="d-flex justify-content-center align-items-center">
+                                    Google
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-4 py-1">
+                            <div class="card mx-1 p-3">
+                                <img src="https://rainbowit.net/themes/inbio/wp-content/uploads/2021/08/client1-1.png" alt="marca">
+                                <div class="divider-horiz"></div>
+                                <p class="d-flex justify-content-center">
+                                    Google
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-4 py-1">
+                            <div class="card mx-1 p-3">
+                                <img src="https://rainbowit.net/themes/inbio/wp-content/uploads/2021/08/client1-1.png" alt="marca">
+                                <div class="divider-horiz"></div>
+                                <p class="d-flex justify-content-center">
+                                    Google
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-4 py-1">
+                            <div class="card mx-1 p-3">
+                                <img src="https://rainbowit.net/themes/inbio/wp-content/uploads/2021/08/client1-1.png" alt="marca">
+                                <div class="divider-horiz"></div>
+                                <p class="d-flex justify-content-center">
+                                    Google
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-4 py-1">
+                            <div class="card mx-1 p-3">
+                                <img src="https://rainbowit.net/themes/inbio/wp-content/uploads/2021/08/client1-1.png" alt="marca">
+                                <div class="divider-horiz"></div>
+                                <p class="d-flex justify-content-center">
+                                    Google
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-4 py-1">
+                            <div class="card mx-1 p-3">
+                                <img src="https://rainbowit.net/themes/inbio/wp-content/uploads/2021/08/client1-1.png" alt="marca">
+                                <div class="divider-horiz"></div>
+                                <p class="d-flex justify-content-center">
+                                    Google
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="resumeSect" class="container d-flex flex-wrap justify-content-center hide">
+                    <div class="col-6 p-4">
+                        <h5>2007 - 2010</h5>
+                        <h3>Education Quality</h3>
+                        <div class="time-line"></div>
+                        <div class="card row p-3 my-3">
+                            <div class="col-9">
+                                <h4>Personal Portfolio April Fools</h4>
+                                <h6>University of DVI (1997 - 2001))</h6>
+                            </div>
+                            <div class="col-3">
+                                <div class="grade d-flex px-1 py-1 justify-content-center">4.30/5</div>
+                            </div>
+                            <div class="divider-horiz"></div>
+                            <p>
+                                The education should be very interactual. Ut 
+                                tincidunt est ac dolor aliquam sodales. Phasellus 
+                                sed mauris hendrerit, laoreet sem in, lobortis 
+                                mauris hendrerit ante.
                             </p>
                         </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="card mx-1 p-3">
-                            <i></i>
+                        <div class="card row p-3 my-3">
+                            <div class="col-9">
+                                <h4>Examples Of Personal Portfolio</h4>
+                                <h6>University of DVI (1997 - 2001))</h6>
+                            </div>
+                            <div class="col-3">
+                                <div class="grade d-flex px-1 py-1 justify-content-center">4.30/5</div>
+                            </div>
+                            <div class="divider-horiz"></div>
                             <p>
-                                Google
+                                The education should be very interactual. Ut 
+                                tincidunt est ac dolor aliquam sodales. Phasellus 
+                                sed mauris hendrerit, laoreet sem in, lobortis 
+                                mauris hendrerit ante.
                             </p>
                         </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="card mx-1 p-3">
-                            <i></i>
+                        <div class="card row p-3 my-3">
+                            <div class="col-9">
+                                <h4>Examples Of Personal Portfolio</h4>
+                                <h6>University of DVI (1997 - 2001))</h6>
+                            </div>
+                            <div class="col-3">
+                                <div class="grade d-flex px-1 py-1 justify-content-center">4.30/5</div>
+                            </div>
+                            <div class="divider-horiz"></div>
                             <p>
-                                Google
+                                The education should be very interactual. Ut 
+                                tincidunt est ac dolor aliquam sodales. Phasellus 
+                                sed mauris hendrerit, laoreet sem in, lobortis 
+                                mauris hendrerit ante.
                             </p>
                         </div>
+                        <h3>Features</h3>
+                        <h1>Design Skill</h1>
+                        <div class="col-12 d-flex flex-wrap my-3">
+                            <p class="col-10">PHOTOSHOP.</p>
+                            <p class="col-2 d-flex flex-wrap justify-content-end">100%</p>
+                            <div class="fill-gauge d-flex align-items-center"><div class="fill"></div></div>
+                        </div>
+                        <div class="col-12 d-flex flex-wrap my-3">
+                            <p class="col-10">PHOTOSHOP.</p>
+                            <p class="col-2 d-flex flex-wrap justify-content-end">95%</p>
+                            <div class="fill-gauge d-flex align-items-center"><div class="fill ninFivPerc"></div></div>
+                        </div>
+                        <div class="col-12 d-flex flex-wrap my-3">
+                            <p class="col-10">PHOTOSHOP.</p>
+                            <p class="col-2 d-flex flex-wrap justify-content-end">60%</p>
+                            <div class="fill-gauge d-flex align-items-center"><div class="fill sixPerc"></div></div>
+                        </div>
+                        <div class="col-12 d-flex flex-wrap my-3">
+                            <p class="col-10">PHOTOSHOP.</p>
+                            <p class="col-2 d-flex flex-wrap justify-content-end">70%</p>
+                            <div class="fill-gauge d-flex align-items-center"><div class="fill sevenPerc"></div></div>
+                        </div>
+                        <div class="col-12 d-flex flex-wrap my-3">
+                            <p class="col-10">PHOTOSHOP.</p>
+                            <p class="col-2 d-flex flex-wrap justify-content-end">90%</p>
+                            <div class="fill-gauge d-flex align-items-center"><div class="fill nintPerc"></div></div>
+                        </div>
                     </div>
-                    <div class="col-4">
-                        <div class="card mx-1 p-3">
-                            <i></i>
+                    <div class="col-6 p-4">
+                        <h5>2007 - 2010</h5>
+                        <h3>Education Quality</h3>
+                        <div class="time-line"></div>
+                        <div class="card row p-3 my-3">
+                            <div class="col-9">
+                                <h4>Personal Portfolio April Fools</h4>
+                                <h6>University of DVI (1997 - 2001))</h6>
+                            </div>
+                            <div class="col-3">
+                                <div class="grade d-flex px-1 py-1 justify-content-center">4.30/5</div>
+                            </div>
+                            <div class="divider-horiz"></div>
                             <p>
-                                Google
+                                The education should be very interactual. Ut 
+                                tincidunt est ac dolor aliquam sodales. Phasellus 
+                                sed mauris hendrerit, laoreet sem in, lobortis 
+                                mauris hendrerit ante.
                             </p>
                         </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="card mx-1 p-3">
-                            <i></i>
+                        <div class="card row p-3 my-3">
+                            <div class="col-9">
+                                <h4>Examples Of Personal Portfolio</h4>
+                                <h6>University of DVI (1997 - 2001))</h6>
+                            </div>
+                            <div class="col-3">
+                                <div class="grade d-flex px-1 py-1 justify-content-center">4.30/5</div>
+                            </div>
+                            <div class="divider-horiz"></div>
                             <p>
-                                Google
+                                The education should be very interactual. Ut 
+                                tincidunt est ac dolor aliquam sodales. Phasellus 
+                                sed mauris hendrerit, laoreet sem in, lobortis 
+                                mauris hendrerit ante.
                             </p>
                         </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="card mx-1 p-3">
-                            <i></i>
+                        <div class="card row p-3 my-3">
+                            <div class="col-9">
+                                <h4>Examples Of Personal Portfolio</h4>
+                                <h6>University of DVI (1997 - 2001))</h6>
+                            </div>
+                            <div class="col-3">
+                                <div class="grade d-flex px-1 py-1 justify-content-center">4.30/5</div>
+                            </div>
+                            <div class="divider-horiz"></div>
                             <p>
-                                Google
+                                The education should be very interactual. Ut 
+                                tincidunt est ac dolor aliquam sodales. Phasellus 
+                                sed mauris hendrerit, laoreet sem in, lobortis 
+                                mauris hendrerit ante.
                             </p>
                         </div>
-                    </div>
-                </div>
-            </section>
-            <section id="resumeSect" class="container d-flex flex-wrap justify-content-center">
-                <div class="col-6 p-4">
-                    <h5>2007 - 2010</h5>
-                    <h3>Education Quality</h3>
-                    <div class="time-line"></div>
-                    <div class="card row p-3 my-3">
-                        <div class="col-9">
-                            <h4>Personal Portfolio April Fools</h4>
-                            <h6>University of DVI (1997 - 2001))</h6>
+                        <h3>Features</h3>
+                        <h1>Design Skill</h1>
+                        <div class="col-12 d-flex flex-wrap my-3">
+                            <p class="col-10">PHOTOSHOP.</p>
+                            <p class="col-2 d-flex flex-wrap justify-content-end">100%</p>
+                            <div class="fill-gauge d-flex align-items-center"><div class="fill"></div></div>
                         </div>
-                        <div class="col-3">
-                            <div class="grade d-flex px-1 py-1 justify-content-center">4.30/5</div>
+                        <div class="col-12 d-flex flex-wrap my-3">
+                            <p class="col-10">PHOTOSHOP.</p>
+                            <p class="col-2 d-flex flex-wrap justify-content-end">95%</p>
+                            <div class="fill-gauge d-flex align-items-center"><div class="fill ninFivPerc"></div></div>
                         </div>
-                        <div class="divider-horiz"></div>
-                        <p>
-                            The education should be very interactual. Ut 
-                            tincidunt est ac dolor aliquam sodales. Phasellus 
-                            sed mauris hendrerit, laoreet sem in, lobortis 
-                            mauris hendrerit ante.
-                        </p>
-                    </div>
-                    <div class="card row p-3 my-3">
-                        <div class="col-9">
-                            <h4>Examples Of Personal Portfolio</h4>
-                            <h6>University of DVI (1997 - 2001))</h6>
+                        <div class="col-12 d-flex flex-wrap my-3">
+                            <p class="col-10">PHOTOSHOP.</p>
+                            <p class="col-2 d-flex flex-wrap justify-content-end">60%</p>
+                            <div class="fill-gauge d-flex align-items-center"><div class="fill sixPerc"></div></div>
                         </div>
-                        <div class="col-3">
-                            <div class="grade d-flex px-1 py-1 justify-content-center">4.30/5</div>
+                        <div class="col-12 d-flex flex-wrap my-3">
+                            <p class="col-10">PHOTOSHOP.</p>
+                            <p class="col-2 d-flex flex-wrap justify-content-end">70%</p>
+                            <div class="fill-gauge d-flex align-items-center"><div class="fill sevenPerc"></div></div>
                         </div>
-                        <div class="divider-horiz"></div>
-                        <p>
-                            The education should be very interactual. Ut 
-                            tincidunt est ac dolor aliquam sodales. Phasellus 
-                            sed mauris hendrerit, laoreet sem in, lobortis 
-                            mauris hendrerit ante.
-                        </p>
-                    </div>
-                    <div class="card row p-3 my-3">
-                        <div class="col-9">
-                            <h4>Examples Of Personal Portfolio</h4>
-                            <h6>University of DVI (1997 - 2001))</h6>
+                        <div class="col-12 d-flex flex-wrap my-3">
+                            <p class="col-10">PHOTOSHOP.</p>
+                            <p class="col-2 d-flex flex-wrap justify-content-end">90%</p>
+                            <div class="fill-gauge d-flex align-items-center"><div class="fill nintPerc"></div></div>
                         </div>
-                        <div class="col-3">
-                            <div class="grade d-flex px-1 py-1 justify-content-center">4.30/5</div>
+                    </div>
+                </section>
+                <section id="workSect" class="container d-flex flex-wrap justify-content-center hide">
+                    <div class="col-4 p-3">
+                        <div class="card d-flex flex-wrap p-3">
+                            <img src="" alt="front-view-woman">
+                            <div class="col-10 subt-contr">Gallery</div>
+                            <div class="col-2"><i class="bi bi-heart"></i></div>
+                            <a href=""><h3>Front view woman wearing trucker hat.</h3></a>
                         </div>
-                        <div class="divider-horiz"></div>
-                        <p>
-                            The education should be very interactual. Ut 
-                            tincidunt est ac dolor aliquam sodales. Phasellus 
-                            sed mauris hendrerit, laoreet sem in, lobortis 
-                            mauris hendrerit ante.
-                        </p>
                     </div>
-                    <h3>Features</h3>
-                    <h1>Design Skill</h1>
-                    <div class="col-12 d-flex flex-wrap my-3">
-                        <p class="col-10">PHOTOSHOP.</p>
-                        <p class="col-2 d-flex flex-wrap justify-content-end">100%</p>
-                        <div class="fill-gauge d-flex align-items-center"><div class="fill"></div></div>
-                    </div>
-                    <div class="col-12 d-flex flex-wrap my-3">
-                        <p class="col-10">PHOTOSHOP.</p>
-                        <p class="col-2 d-flex flex-wrap justify-content-end">95%</p>
-                        <div class="fill-gauge d-flex align-items-center"><div class="fill ninFivPerc"></div></div>
-                    </div>
-                    <div class="col-12 d-flex flex-wrap my-3">
-                        <p class="col-10">PHOTOSHOP.</p>
-                        <p class="col-2 d-flex flex-wrap justify-content-end">60%</p>
-                        <div class="fill-gauge d-flex align-items-center"><div class="fill sixPerc"></div></div>
-                    </div>
-                    <div class="col-12 d-flex flex-wrap my-3">
-                        <p class="col-10">PHOTOSHOP.</p>
-                        <p class="col-2 d-flex flex-wrap justify-content-end">70%</p>
-                        <div class="fill-gauge d-flex align-items-center"><div class="fill sevenPerc"></div></div>
-                    </div>
-                    <div class="col-12 d-flex flex-wrap my-3">
-                        <p class="col-10">PHOTOSHOP.</p>
-                        <p class="col-2 d-flex flex-wrap justify-content-end">90%</p>
-                        <div class="fill-gauge d-flex align-items-center"><div class="fill nintPerc"></div></div>
-                    </div>
-                </div>
-                <div class="col-6 p-4">
-                    <h5>2007 - 2010</h5>
-                    <h3>Education Quality</h3>
-                    <div class="time-line"></div>
-                    <div class="card row p-3 my-3">
-                        <div class="col-9">
-                            <h4>Personal Portfolio April Fools</h4>
-                            <h6>University of DVI (1997 - 2001))</h6>
+                    <div class="col-4 p-3">
+                        <div class="card d-flex flex-wrap p-3">
+                            <img src="" alt="front-view-woman">
+                            <div class="col-10 subt-contr">Gallery</div>
+                            <div class="col-2"><i class="bi bi-heart"></i></div>
+                            <a href=""><h3>Front view woman wearing trucker hat.</h3></a>
                         </div>
-                        <div class="col-3">
-                            <div class="grade d-flex px-1 py-1 justify-content-center">4.30/5</div>
+                    </div>
+                    <div class="col-4 p-3">
+                        <div class="card d-flex flex-wrap p-3">
+                            <img src="" alt="front-view-woman">
+                            <div class="col-10 subt-contr">Gallery</div>
+                            <div class="col-2"><i class="bi bi-heart"></i></div>
+                            <a href=""><h3>Front view woman wearing trucker hat.</h3></a>
                         </div>
-                        <div class="divider-horiz"></div>
-                        <p>
-                            The education should be very interactual. Ut 
-                            tincidunt est ac dolor aliquam sodales. Phasellus 
-                            sed mauris hendrerit, laoreet sem in, lobortis 
-                            mauris hendrerit ante.
-                        </p>
                     </div>
-                    <div class="card row p-3 my-3">
-                        <div class="col-9">
-                            <h4>Examples Of Personal Portfolio</h4>
-                            <h6>University of DVI (1997 - 2001))</h6>
+                    <div class="col-4 p-3">
+                        <div class="card d-flex flex-wrap p-3">
+                            <img src="" alt="front-view-woman">
+                            <div class="col-10 subt-contr">Gallery</div>
+                            <div class="col-2"><i class="bi bi-heart"></i></div>
+                            <a href=""><h3>Front view woman wearing trucker hat.</h3></a>
                         </div>
-                        <div class="col-3">
-                            <div class="grade d-flex px-1 py-1 justify-content-center">4.30/5</div>
+                    </div>
+                    <div class="col-4 p-3">
+                        <div class="card d-flex flex-wrap p-3">
+                            <img src="" alt="front-view-woman">
+                            <div class="col-10 subt-contr">Gallery</div>
+                            <div class="col-2"><i class="bi bi-heart"></i></div>
+                            <a href=""><h3>Front view woman wearing trucker hat.</h3></a>
                         </div>
-                        <div class="divider-horiz"></div>
-                        <p>
-                            The education should be very interactual. Ut 
-                            tincidunt est ac dolor aliquam sodales. Phasellus 
-                            sed mauris hendrerit, laoreet sem in, lobortis 
-                            mauris hendrerit ante.
-                        </p>
                     </div>
-                    <div class="card row p-3 my-3">
-                        <div class="col-9">
-                            <h4>Examples Of Personal Portfolio</h4>
-                            <h6>University of DVI (1997 - 2001))</h6>
+                    <div class="col-4 p-3">
+                        <div class="card d-flex flex-wrap p-3">
+                            <img src="" alt="front-view-woman">
+                            <div class="col-10 subt-contr">Gallery</div>
+                            <div class="col-2"><i class="bi bi-heart"></i></div>
+                            <a href=""><h3>Front view woman wearing trucker hat.</h3></a>
                         </div>
-                        <div class="col-3">
-                            <div class="grade d-flex px-1 py-1 justify-content-center">4.30/5</div>
+                    </div>
+                </section>
+                <section id="blogSect" class="container d-flex flex-wrap justify-content-center hide">
+                    <div class="col-4 p-3">
+                        <div class="card row p-3">
+                            <img src="" alt="front-view-woman">
+                            <div class="col-8 subt-contr">Gallery</div>
+                            <div class="col-4 row justify-content-end"><i class="bi bi-clock"></i></i>140</div>
+                            <a href=""><h3>Front view woman wearing trucker hat.</h3></a>
                         </div>
-                        <div class="divider-horiz"></div>
-                        <p>
-                            The education should be very interactual. Ut 
-                            tincidunt est ac dolor aliquam sodales. Phasellus 
-                            sed mauris hendrerit, laoreet sem in, lobortis 
-                            mauris hendrerit ante.
-                        </p>
                     </div>
-                    <h3>Features</h3>
-                    <h1>Design Skill</h1>
-                    <div class="col-12 d-flex flex-wrap my-3">
-                        <p class="col-10">PHOTOSHOP.</p>
-                        <p class="col-2 d-flex flex-wrap justify-content-end">100%</p>
-                        <div class="fill-gauge d-flex align-items-center"><div class="fill"></div></div>
+                    <div class="col-4 p-3">
+                        <div class="card d-flex flex-wrap p-3">
+                            <img src="" alt="front-view-woman">
+                            <div class="col-8 subt-contr">Gallery</div>
+                            <div class="col-4 row justify-content-end"><i class="bi bi-clock"></i></i></div>
+                            <a href=""><h3>Front view woman wearing trucker hat.</h3></a>
+                        </div>
                     </div>
-                    <div class="col-12 d-flex flex-wrap my-3">
-                        <p class="col-10">PHOTOSHOP.</p>
-                        <p class="col-2 d-flex flex-wrap justify-content-end">95%</p>
-                        <div class="fill-gauge d-flex align-items-center"><div class="fill ninFivPerc"></div></div>
+                    <div class="col-4 p-3">
+                        <div class="card d-flex flex-wrap p-3">
+                            <img src="" alt="front-view-woman">
+                            <div class="col-8 subt-contr">Gallery</div>
+                            <div class="col-4 row justify-content-end"><i class="bi bi-clock"></i></i></div>
+                            <a href=""><h3>Front view woman wearing trucker hat.</h3></a>
+                        </div>
                     </div>
-                    <div class="col-12 d-flex flex-wrap my-3">
-                        <p class="col-10">PHOTOSHOP.</p>
-                        <p class="col-2 d-flex flex-wrap justify-content-end">60%</p>
-                        <div class="fill-gauge d-flex align-items-center"><div class="fill sixPerc"></div></div>
+                    <div class="col-4 p-3">
+                        <div class="card d-flex flex-wrap p-3">
+                            <img src="" alt="front-view-woman">
+                            <div class="col-8 subt-contr">Gallery</div>
+                            <div class="col-4 row justify-content-end"><i class="bi bi-clock"></i></i></div>
+                            <a href=""><h3>Front view woman wearing trucker hat.</h3></a>
+                        </div>
                     </div>
-                    <div class="col-12 d-flex flex-wrap my-3">
-                        <p class="col-10">PHOTOSHOP.</p>
-                        <p class="col-2 d-flex flex-wrap justify-content-end">70%</p>
-                        <div class="fill-gauge d-flex align-items-center"><div class="fill sevenPerc"></div></div>
+                    <div class="col-4 p-3">
+                        <div class="card d-flex flex-wrap p-3">
+                            <img src="" alt="front-view-woman">
+                            <div class="col-8 subt-contr">Gallery</div>
+                            <div class="col-4 row justify-content-end"><i class="bi bi-clock"></i></i></div>
+                            <a href=""><h3>Front view woman wearing trucker hat.</h3></a>
+                        </div>
                     </div>
-                    <div class="col-12 d-flex flex-wrap my-3">
-                        <p class="col-10">PHOTOSHOP.</p>
-                        <p class="col-2 d-flex flex-wrap justify-content-end">90%</p>
-                        <div class="fill-gauge d-flex align-items-center"><div class="fill nintPerc"></div></div>
+                    <div class="col-4 p-3">
+                        <div class="card d-flex flex-wrap p-3">
+                            <img src="" alt="front-view-woman">
+                            <div class="col-8 subt-contr">Gallery</div>
+                            <div class="col-4 row justify-content-end"><i class="bi bi-clock"></i></div>
+                            <a href=""><h3>Front view woman wearing trucker hat.</h3></a>
+                        </div>
                     </div>
-                </div>
-            </section>
-            <section id="workSect" class="container d-flex flex-wrap justify-content-center">
-                <div class="col-4 p-3">
-                    <div class="card d-flex flex-wrap p-3">
-                        <img src="" alt="front-view-woman">
-                        <div class="col-10">Gallery</div>
-                        <div class="col-2"><i class="bi bi-heart"></i></div>
-                        <a href=""><h3>Front view woman wearing trucker hat.</h3></a>
-                    </div>
-                </div>
-                <div class="col-4 p-3">
-                    <div class="card d-flex flex-wrap p-3">
-                        <img src="" alt="front-view-woman">
-                        <div class="col-10">Gallery</div>
-                        <div class="col-2"><i class="bi bi-heart"></i></div>
-                        <a href=""><h3>Front view woman wearing trucker hat.</h3></a>
-                    </div>
-                </div>
-                <div class="col-4 p-3">
-                    <div class="card d-flex flex-wrap p-3">
-                        <img src="" alt="front-view-woman">
-                        <div class="col-10">Gallery</div>
-                        <div class="col-2"><i class="bi bi-heart"></i></div>
-                        <a href=""><h3>Front view woman wearing trucker hat.</h3></a>
-                    </div>
-                </div>
-                <div class="col-4 p-3">
-                    <div class="card d-flex flex-wrap p-3">
-                        <img src="" alt="front-view-woman">
-                        <div class="col-10">Gallery</div>
-                        <div class="col-2"><i class="bi bi-heart"></i></div>
-                        <a href=""><h3>Front view woman wearing trucker hat.</h3></a>
-                    </div>
-                </div>
-                <div class="col-4 p-3">
-                    <div class="card d-flex flex-wrap p-3">
-                        <img src="" alt="front-view-woman">
-                        <div class="col-10">Gallery</div>
-                        <div class="col-2"><i class="bi bi-heart"></i></div>
-                        <a href=""><h3>Front view woman wearing trucker hat.</h3></a>
-                    </div>
-                </div>
-                <div class="col-4 p-3">
-                    <div class="card d-flex flex-wrap p-3">
-                        <img src="" alt="front-view-woman">
-                        <div class="col-10">Gallery</div>
-                        <div class="col-2"><i class="bi bi-heart"></i></div>
-                        <a href=""><h3>Front view woman wearing trucker hat.</h3></a>
-                    </div>
-                </div>
-            </section>
-            <section id="blogSect" class="container d-flex flex-wrap justify-content-center">
-                <div class="col-4 p-3">
-                    <div class="card row p-3">
-                        <img src="" alt="front-view-woman">
-                        <div class="col-8">Gallery</div>
-                        <div class="col-4 row justify-content-end"><i class="bi bi-heart"></i>140</div>
-                        <a href=""><h3>Front view woman wearing trucker hat.</h3></a>
-                    </div>
-                </div>
-                <div class="col-4 p-3">
-                    <div class="card d-flex flex-wrap p-3">
-                        <img src="" alt="front-view-woman">
-                        <div class="col-8">Gallery</div>
-                        <div class="col-4 row justify-content-end"><i class="bi bi-heart"></i></div>
-                        <a href=""><h3>Front view woman wearing trucker hat.</h3></a>
-                    </div>
-                </div>
-                <div class="col-4 p-3">
-                    <div class="card d-flex flex-wrap p-3">
-                        <img src="" alt="front-view-woman">
-                        <div class="col-8">Gallery</div>
-                        <div class="col-4 row justify-content-end"><i class="bi bi-heart"></i></div>
-                        <a href=""><h3>Front view woman wearing trucker hat.</h3></a>
-                    </div>
-                </div>
-                <div class="col-4 p-3">
-                    <div class="card d-flex flex-wrap p-3">
-                        <img src="" alt="front-view-woman">
-                        <div class="col-8">Gallery</div>
-                        <div class="col-4 row justify-content-end"><i class="bi bi-heart"></i></div>
-                        <a href=""><h3>Front view woman wearing trucker hat.</h3></a>
-                    </div>
-                </div>
-                <div class="col-4 p-3">
-                    <div class="card d-flex flex-wrap p-3">
-                        <img src="" alt="front-view-woman">
-                        <div class="col-8">Gallery</div>
-                        <div class="col-4 row justify-content-end"><i class="bi bi-heart"></i></div>
-                        <a href=""><h3>Front view woman wearing trucker hat.</h3></a>
-                    </div>
-                </div>
-                <div class="col-4 p-3">
-                    <div class="card d-flex flex-wrap p-3">
-                        <img src="" alt="front-view-woman">
-                        <div class="col-8">Gallery</div>
-                        <div class="col-4 row justify-content-end"><i class="bi bi-heart"></i></div>
-                        <a href=""><h3>Front view woman wearing trucker hat.</h3></a>
-                    </div>
-                </div>
-            </section>
+                </section>
+            </div>
         </div>
     </div>
     <script rel="personalizedJavascript" src="/javascript/functions.js"></script>

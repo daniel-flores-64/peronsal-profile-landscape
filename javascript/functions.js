@@ -1,19 +1,18 @@
-var idCodeOut = aboutSect;
-function menuActive(navNum){
-    var activeElem = document.getElementsByClassName("navbar-brand");
-    for(var i=0;i<activeElem.length;i++){
+let idCodeOut = aboutSect;
+function menuActive(navNum, idCodeIn){
+    var activeMenuElem = document.getElementsByClassName("navbar-brand");
+    /*var activeElem = document.getElementById(idCodeIn);
+    var deactiveElem = document.getElementById(idCodeOut);*/
+    for(var i=0;i<activeMenuElem.length;i++){
         switch (i == navNum){
             case true:
-                activeElem[i].classList.add("active");
+                activeMenuElem[i].classList.add("active");
                 break;
             default:
-                activeElem[i].classList.remove("active");
+                activeMenuElem[i].classList.remove("active");
         }
     }
-}
-
-function vanishSect(idCodeIn){
-    document.getElementById(idCodeIn).style.display = "flex";
-    document.getElementById(idCodeOut).style.display = "none";
+    idCodeIn.classList.remove("hide");
+    idCodeOut.classList.add("hide");
     idCodeOut = idCodeIn;
 }

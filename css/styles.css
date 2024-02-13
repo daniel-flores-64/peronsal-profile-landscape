@@ -14,7 +14,7 @@ i, .infoTitle{
 }
 button{
     color: var(--contrastColor);
-    box-shadow: 2px 2px;
+    box-shadow: var(--secondaryHovColor) 2px 2px;
     border-radius: 3px;
     background-color: var(--primaryColor);
     padding: 20px;
@@ -22,9 +22,9 @@ button{
 #aboutSect, #resumeSect, #workSect, #blogSect, #contactSect{
     background-color: var(--secondaryColor);
 }
-/*#resumeSect, #workSect, #blogSect, #contactSect{
+.hide{
     display: none !important;
-}*/
+}
 .selfIntro h1, .infoCont, .detail-cont h3, .detail-cont h1{
     color: var(--highText);
 }
@@ -65,6 +65,9 @@ p, li, .selfIntro h3{
     width: auto;
     box-shadow: 8px 5px;
 }
+.infoBlock .infoTitle{
+    justify-content: start;
+}
 .body-cont{
     display: flex;
     flex-wrap: wrap;
@@ -73,6 +76,7 @@ p, li, .selfIntro h3{
     background-color: var(--secondaryColor);
     height: 520px;
     border-radius: 6px;
+    box-shadow: 2px 2px;
 }
 .navbar-brand{
     display: flex;
@@ -95,7 +99,9 @@ p, li, .selfIntro h3{
     color: var(--highText);
 }
 .infoTitle{
-    color: var(--norText);
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 .detail-cont{
     display: flex;
@@ -112,7 +118,8 @@ p, li, .selfIntro h3{
 .card{
     color: var(--norText);
     background-color: var(--primaryColor);
-    border: 1px solid --secondaryColor;
+    display: flex;
+    justify-content: center;
 }
 .card.row{
     flex-direction: row !important;
@@ -122,9 +129,12 @@ p, li, .selfIntro h3{
 }
 .divider-horiz{
     width: 100%;
-    height: 1px;
-    margin: 3px 0;
+    height: 2px;
+    margin: 10px 0;
     background-color: var(--secondaryColor);
+}
+.subt-contr{
+    color: var(--contrastColor);
 }
 .grade{
     background-color: var(--secondaryColor);
