@@ -34,8 +34,14 @@ button{
     width: 100%;
     z-index: -100;
 }
-p, li, .selfIntro h3{
+p, li, .selfIntro h3, .effectLink{
     color: var(--norText);
+    text-decoration: none;
+}
+input, textarea{
+    width: 100%;
+    background-color: var(--secondaryHovColor);
+    color: var(--highText);
 }
 .i-container{
     padding: 5px;
@@ -170,4 +176,25 @@ p, li, .selfIntro h3{
 }
 .nintPerc{
     width:90%;
+}
+.effectLink:hover{
+    color: var(--contrastColor);
+    text-decoration: underline;
+    animation-name: linkFill;
+    animation-duration: .5s;
+}
+@keyframes linkFill{
+    from{color: var(--norText);}
+    to{color: var(--contrastColor);text-decoration: underline;}
+}
+.emptyBottom{
+    height: 40px;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--norText);
+    height: 100px;
+    background-color: var(--primaryColor);
 }
