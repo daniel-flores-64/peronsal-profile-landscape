@@ -25,7 +25,7 @@ button{
 .hide{
     display: none !important;
 }
-.selfIntro h1, .infoCont, .detail-cont h3, .detail-cont h1{
+.selfIntro h1, .infoCont, .detail-cont h3, .detail-cont h1, input, textarea{
     color: var(--highText);
 }
 .topPict{
@@ -41,7 +41,6 @@ p, li, .selfIntro h3, .effectLink{
 input, textarea{
     width: 100%;
     background-color: var(--secondaryHovColor);
-    color: var(--highText);
 }
 .i-container{
     padding: 5px;
@@ -83,6 +82,8 @@ input, textarea{
     height: 520px;
     border-radius: 6px;
     box-shadow: 2px 2px;
+    top: 35px;
+    bottom: 35px;
 }
 .navbar-brand{
     display: flex;
