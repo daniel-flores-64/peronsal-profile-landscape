@@ -92,6 +92,9 @@ input, textarea{
 .card:hover{
     background-color: var(--secondaryHovColor);
 }
+img{
+    border-radius: 10px;
+}
 /*}*/
 /*ABOUT*/
 /*{*/
@@ -111,7 +114,7 @@ input, textarea{
     margin-top: 150px;
     border-radius: 5px;
     width: auto;
-    box-shadow: 8px 5px;
+    box-shadow: 8px 5px 20px;
 }
 .infoBlock .infoTitle{
     justify-content: start;
@@ -130,7 +133,7 @@ input, textarea{
     background-color: var(--secondaryColor);
     height: 520px;
     border-radius: 6px;
-    box-shadow: 2px 2px;
+    box-shadow: 2px 2px 20px;
     top: 35px;
     bottom: 35px;
 }
@@ -143,12 +146,12 @@ input, textarea{
     padding: 2px 5px;
     border-radius: 5px;
     text-align: center;
-    color: var(--highText);
+    color: var(--highText) !important;
     width: 100%;
+    margin: 0;
 }
 .navbar-brand.active{
     background-color: var(--contrastColor);
-    color: var(--highText);
 }
 .navbar-brand:hover{
     background-color: var(--contrastColor);
@@ -176,13 +179,14 @@ input, textarea{
 .fill-gauge{
     background-color: var(--secondaryHovColor);
     border-radius: 8px;
-    height: 15px;
+    height: 12px;
     width: 100%;
+    box-shadow: inset 2px 4px 5px;
 }
 .fill{
     background: linear-gradient(to right, #6b4dbe, #ac3a3a);
     width: 100%;
-    height: 10px;
+    height: 8px;
     margin: 0 2px;
     border-radius: 8px;
 }
